@@ -1,15 +1,13 @@
 footer_menu__settings:
   menu__items:
-    - title: 'Home'
+    - title: '主页'
       url: '/'
-    - title: 'Projects'
+    - title: '作品集'
       url: '/projects/'
-    - title: 'Elements'
+    - title: '图片库'
       url: '/elements/'
-    - title: 'About'
+    - title: '个人简历'
       url: '/about/'
-    - title: 'Blog'
-      url: '/blog/'
 
 copyright_text_html: >-
-  <p> 2021 &copy; <a href="/">Vonge</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p>
+  <p> 2022 &copy; <a href="/">Munira</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a> Made with ❤️ by <a href="https://www.linkedin.com/in/sai-diliyaer">Dilyar</a>.</p>

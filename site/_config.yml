@@ -1,4 +1,4 @@
-title: Vonge
+title: 穆妮热
 
 plugins:
   - jekyll-bookshop
@@ -36,9 +36,6 @@ collections:
     permalink: /project/:slug
   testimonials:
     output: false
-  posts:
-    output: true
-    permalink: /blog/:slug
 
 cloudcannon:
   collections:
@@ -59,10 +56,6 @@ _collection_groups:
       - pages
       - projects
       - testimonials
-  - heading: Blogging
-    collections:
-      - posts
-      - drafts
   - heading: Settings
     collections:
       - data
@@ -81,10 +74,6 @@ defaults:
       type: projects
     values:
       layout: project
-  - scope:
-      type: posts
-    values:
-      layout: post
 
 
 # Tags

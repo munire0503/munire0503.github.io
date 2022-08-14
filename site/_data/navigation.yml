@@ -1,16 +1,14 @@
-logo_image: '/images/logo.svg' # You can add own logo. For example '/images/logo.png'.
+logo_image: '/images/munira-logo.png'
 
 menu__settings:
   menu__items:
-    - title: 'Home'
+    - title: '主页'
       url: '/'
-    - title: 'Projects'
+    - title: '作品集'
       url: '/projects/'
-    - title: 'Blog'
-      url: '/blog/'
-    - title: 'Pages'
-      submenu:
-      - url: '/about/'
-        title: 'About'
-      - url: '/elements/'
-        title: 'Elements'
+    # - title: '关于我'
+    #   submenu:
+    #   - url: '/about/'
+    #     title: '个人简历'
+    #   - url: '/elements/'
+    #     title: '照片库'
