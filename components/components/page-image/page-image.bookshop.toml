@@ -1,7 +1,7 @@
 [component]
 structures = [ "content_blocks" ]
-label = "Page Image"
-description = "Page image"
+label = "About CV"
+description = "About CV"
 icon = "wysiwyg"
 tags = ["Headers"]
 

@@ -3,15 +3,9 @@ footer_menu__settings:
     - title: '主页'
       url: '/'
     - title: '作品集'
-      url: '/projects/'
+      url: '/projects'
     - title: '关于我'
-      submenu:
-      - url: '/persona/'
-        title: '人物画像'
-      - url: '/journey-map/'
-        title: '旅程图'
-      - url: '/story-telling/'
-        title: '故事版'
+      url: '/about'
     - title: '简历'
       url: '/files/munire-resume.pdf'
 

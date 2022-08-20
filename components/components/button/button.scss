@@ -7,6 +7,7 @@
   align-items: center;
   line-height: 1;
   font-weight: 700;
+  font-size: 16px;
   border-radius: 16px;
   white-space: nowrap;
   border: none;
@@ -26,7 +27,7 @@
     background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
 
     &:hover {
-      color: $white !important;
+      color: $white  !important;
 
       &:before {
         opacity: 1;
@@ -58,13 +59,25 @@
     }
   }
 
-  &--small {
-    padding: 16px 32px;
-    font-size: 16px;
+  // &--small {
+  //   padding: 16px 32px;
+  //   font-size: 16px;
+  // }
+
+  // &--large {
+  //   padding: 24px 44px;
+  //   font-size: 18px;
+  // }
+
+  @media (max-width: $desktop) {
+    font-size: 10px
   }
 
-  &--large {
-    padding: 24px 44px;
-    font-size: 18px;
+  @media (max-width: $tablet) {
+    font-size: 7px
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 5px
   }
 }
