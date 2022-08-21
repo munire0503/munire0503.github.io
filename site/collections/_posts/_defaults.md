@@ -1,5 +1,4 @@
 ---
-date:
 title:
 description:
 tags:

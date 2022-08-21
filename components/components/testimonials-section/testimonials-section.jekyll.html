@@ -1,0 +1,39 @@
+<!-- begin testimonials -->
+<section class="section testimonials animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          <div class="section__head">
+            <!-- Add link and hook to the title. -->
+            <h1 id="story-telling" class="section__title"><a href="#story-telling">{{ include.title }}</a></h1>
+          </div>
+          <div class="section__description">{{ include.description_html }}</div>
+        </div>
+
+        {% if include.show_testimonials %}
+        <div class="testimonials__slider my-slider">
+          {% for testimonial-item in site.testimonials %}
+            {% bookshop testimonial-card testimonial-item=testimonial-item %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Move the control bars to the center-end of pictures. -->
+        <div style="margin-left:auto; margin-right:auto; width:fit-content;">
+          <ul class="controls list-reset" id="customize-controls" aria-label="Slider Navigation" tabindex="0">
+            <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+              <i class="ion ion-ios-arrow-back"></i>
+            </li>
+            <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+              <i class="ion ion-ios-arrow-forward"></i>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->

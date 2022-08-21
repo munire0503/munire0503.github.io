@@ -7,18 +7,21 @@
 
         <div class="{{c}}__inner">
           <div class="{{c}}__info">
-            <h3 class="{{c}}__title">{{ include.newsletter_title }}</h3>
+            <!-- Change the headline to normal paragraph -->
+            <!-- <h3 class="{{c}}__title">{{ include.newsletter_title }}</h3> -->
+            <p >{{ include.newsletter_title }}</p>
             <div class="{{c}}__subtitle">
               <span id="ityped"></span>
             </div>
           </div>
 
-          <form class="{{c}}__form validate" action="//{{ include.newsletter_identifier }}"
+          <form class="{{c}}__form validate" action="{{ include.newsletter_link }}"
             method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
-            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
-            <input class="{{c}}__form-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="您的邮件地址">
-            <button class="c-button c-button--primary c-button--large" id="membedded-subscribe" type="submit" name="subscribe">{{ include.newsletter_button }}</button>
+            <!-- <label class="screen-reader-text" for="mce-EMAIL">Email address</label> -->
+            <!-- <input class="{{c}}__form-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="您的邮件地址"> -->
+            <button class="c-button c-button--primary c-button--large">{{ include.newsletter_button }}</button>
           </form>
+
 
         </div>
       </div>
