@@ -9,5 +9,5 @@ tags:
   - 质量
   - 沟通
   - 风险
-image: /images/pm-wedding-preview.png
+image: /images/pm-wedding-preview
 ---
