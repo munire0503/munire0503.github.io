@@ -82,7 +82,7 @@
                     
                       <a href="/about/#journey-map" class="nav__link">旅程图</a>
                     
-                      <a href="/about/#story-telling/" class="nav__link">故事版</a>
+                      <a href="/about/#story-telling" class="nav__link">故事版</a>
                     
                   </div>
                 </li>
@@ -159,7 +159,12 @@
 
           <div class="c-hero__right">
             <div class="c-hero__image">
-              <img loading="lazy" src="/images/hero.png" alt="">
+              <!-- Use avif or webp format if supported by the browser -->
+              <picture>
+                <source type="image/avif" srcset="/images/hero-2x.avif">
+                <source type="image/webp" srcset="/images/hero-2x.webp">
+                <img loading="lazy" src="/images/hero-2x.jpg" alt="">
+              </picture>
             </div>
           </div>
 
@@ -196,7 +201,12 @@
 <article class="c-project-card col col-6 col-d-6 col-t-12">
   <div class="c-project-card__content">
     <a href="/project/1-dian-tao" class="c-project-card__image">
-      <img loading="lazy" src="/images/project-diantao-preview.png" alt="点淘购物体验优化">
+      <!-- Use avif or webp format if supported by the browser -->
+      <picture>
+        <source type="image/avif" srcset="/images/project-diantao-preview.avif">
+        <source type="image/webp" srcset="/images/project-diantao-preview.webp">
+        <img loading="lazy" src="/images/project-diantao-preview.png" alt="点淘购物体验优化">
+      </picture>
     </a>
     <div class="c-project-card__info">
       <div class="c-project-card__info-wrap">
@@ -219,7 +229,12 @@
 <article class="c-project-card col col-6 col-d-6 col-t-12">
   <div class="c-project-card__content">
     <a href="/project/2-san-yang" class="c-project-card__image">
-      <img loading="lazy" src="/images/project-sanyang-preview.png" alt="三羊订奶小程序开发">
+      <!-- Use avif or webp format if supported by the browser -->
+      <picture>
+        <source type="image/avif" srcset="/images/project-sanyang-preview.avif">
+        <source type="image/webp" srcset="/images/project-sanyang-preview.webp">
+        <img loading="lazy" src="/images/project-sanyang-preview.png" alt="三羊订奶小程序开发">
+      </picture>
     </a>
     <div class="c-project-card__info">
       <div class="c-project-card__info-wrap">
@@ -278,8 +293,13 @@
       <!-- <a class="c-blog-card__image" href="/2022/08/21/pm-wedding.html"> -->
 
       <!-- Link to the PDF file directly-->
-      <a class="c-blog-card__image" href="/files/pm-wedding.pdf">
-        <img loading="lazy" src="/images/pm-wedding-preview.png" alt="项目管理 - 180人婚礼 (英文)">
+      <a target="_blank" rel="noopener noreferrer" class="c-blog-card__image" href="/files/pm-wedding.pdf">
+        <!-- Use avif or webp format if supported by the browser -->
+        <picture>
+          <source type="image/avif" srcset="/images/pm-wedding-preview.avif">
+          <source type="image/webp" srcset="/images/pm-wedding-preview.webp">
+          <img loading="lazy" src="/images/pm-wedding-preview.png" alt="项目管理 - 180人婚礼 (英文)">
+        </picture>
       </a>
     </div>
     
@@ -321,7 +341,7 @@
         <!-- <a href="/2022/08/21/pm-wedding.html">项目管理 - 180人婚礼 (英文)</a> -->
 
         <!-- Link to the PDF file directly-->
-        <a href="/files/pm-wedding.pdf">项目管理 - 180人婚礼 (英文)</a>
+        <a target="_blank" rel="noopener noreferrer" href="/files/pm-wedding.pdf">项目管理 - 180人婚礼 (英文)</a>
       </h2>
 
       <p class="c-blog-card__excerpt">
