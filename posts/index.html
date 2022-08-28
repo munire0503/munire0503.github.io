@@ -79,7 +79,7 @@
                     
                       <a class="nav__link" href="/about/#journey-map">旅程图</a>
                     
-                      <a class="nav__link" href="/about/#story-telling/">故事版</a>
+                      <a class="nav__link" href="/about/#story-telling">故事版</a>
                     
                   </div>
                 </li>
@@ -158,8 +158,13 @@
       <!-- <a class="c-blog-card__image" href="/2022/08/21/pm-wedding.html"> -->
 
       <!-- Link to the PDF file directly-->
-      <a class="c-blog-card__image" href="/files/pm-wedding.pdf">
-        <img alt="项目管理 - 180人婚礼 (英文)" loading="lazy" src="/images/pm-wedding-preview.png">
+      <a class="c-blog-card__image" href="/files/pm-wedding.pdf" rel="noopener noreferrer" target="_blank">
+        <!-- Use avif or webp format if supported by the browser -->
+        <picture>
+          <source srcset="/images/pm-wedding-preview.avif" type="image/avif">
+          <source srcset="/images/pm-wedding-preview.webp" type="image/webp">
+          <img alt="项目管理 - 180人婚礼 (英文)" loading="lazy" src="/images/pm-wedding-preview.png">
+        </picture>
       </a>
     </div>
     
@@ -201,7 +206,7 @@
         <!-- <a href="/2022/08/21/pm-wedding.html">项目管理 - 180人婚礼 (英文)</a> -->
 
         <!-- Link to the PDF file directly-->
-        <a href="/files/pm-wedding.pdf">项目管理 - 180人婚礼 (英文)</a>
+        <a href="/files/pm-wedding.pdf" rel="noopener noreferrer" target="_blank">项目管理 - 180人婚礼 (英文)</a>
       </h2>
 
       <p class="c-blog-card__excerpt">
