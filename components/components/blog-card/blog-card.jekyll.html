@@ -8,8 +8,13 @@
       <!-- <a class="{{c}}__image" href="{{ include.post.url }}"> -->
 
       <!-- Link to the PDF file directly-->
-      <a class="{{c}}__image" href="/files/pm-wedding.pdf">
-        <img loading="lazy" src="{{ include.post.image }}" alt="{{ include.post.title }}">
+      <a target="_blank" rel="noopener noreferrer" class="{{c}}__image" href="/files/pm-wedding.pdf">
+        <!-- Use avif or webp format if supported by the browser -->
+        <picture>
+          <source type="image/avif" srcset="{{ include.post.image }}.avif">
+          <source type="image/webp" srcset="{{ include.post.image }}.webp">
+          <img loading="lazy" src="{{ include.post.image }}.png" alt="{{ include.post.title }}">
+        </picture>
       </a>
     </div>
     {% endif %}
@@ -31,7 +36,7 @@
         <!-- <a href="{{ include.post.url }}">{{ include.post.title }}</a> -->
 
         <!-- Link to the PDF file directly-->
-        <a href="/files/pm-wedding.pdf">{{ include.post.title }}</a>
+        <a target="_blank" rel="noopener noreferrer" href="/files/pm-wedding.pdf">{{ include.post.title }}</a>
       </h2>
 
       <p class="{{c}}__excerpt">

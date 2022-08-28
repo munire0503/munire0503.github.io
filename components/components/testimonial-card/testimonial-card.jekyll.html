@@ -4,7 +4,12 @@
     <div class="{{c}}__client-meta">
       {% if include.testimonial-item.image %}
         <div class="{{c}}__image-container">
-          <img class="{{c}}__client-avatar" src="{{ include.testimonial-item.image }}" alt="{{ include.testimonial-item.name }}">
+          <!-- Use avif or webp format if supported by the browser -->
+          <picture>
+            <source type="image/avif" srcset="{{ include.testimonial-item.image }}.avif">
+            <source type="image/webp" srcset="{{ include.testimonial-item.image }}.webp">
+            <img loading="lazy" class="{{c}}__client-avatar" src="{{ include.testimonial-item.image }}.png" alt="{{ include.testimonial-item.name }}">
+          </picture>
         </div>
       {% endif %}
       <div class="{{c}}__client-info">

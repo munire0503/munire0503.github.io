@@ -21,7 +21,12 @@
 
           <div class="{{c}}__right">
             <div class="{{c}}__image">
-              <img loading="lazy" src="{{ include.image }}" alt="{{ include.hero_image_alt }}">
+              <!-- Use avif or webp format if supported by the browser -->
+              <picture>
+                <source type="image/avif" srcset="{{ include.image }}.avif">
+                <source type="image/webp" srcset="{{ include.image }}.webp">
+                <img loading="lazy" src="{{ include.image }}.jpg" alt="{{ include.hero_image_alt }}">
+              </picture>
             </div>
           </div>
 

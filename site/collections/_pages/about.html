@@ -2,7 +2,7 @@
 title: About
 content_blocks:
   - _bookshop_name: page-image
-    image: /images/munire-cv.jpg
+    image: /images/munire-cv-2x
     image_alt: Munire's CV
   - _bookshop_name: content
     content_html: >-
@@ -11,7 +11,12 @@ content_blocks:
       <p style="padding-top:2%;"><b>Hi! 我是穆妮热</b> 可以叫我Mia ^_^ <br>
       我目前任职三羊乳业有限责任公司市场主管，同时也负责公司配送软件的小程序UX设计以及公众号运营.</p>
       <p>让我用UX方式和你讲述我的故事吧...</p>
-      <img style="padding-left:5%; padding-right: 5%; padding-top: 5%;" src="/images/persona-4X.png" alt="Persona">
+      <!-- Use avif or webp format if supported by the browser -->
+      <picture>
+        <source type="image/avif" srcset="/images/persona-2x.avif">
+        <source type="image/webp" srcset="/images/persona-2x.webp">
+        <img loading="lazy" style="padding-left:5%; padding-right: 5%; padding-top: 5%;" src="/images/persona-2x.png" alt="Munire's Persona">
+      </picture>
 
       <!-- 旅程图 -->
       <h1 id="journey-map" style="padding-top: 10%;"><a href="#journey-map">旅程图</a></h1>
@@ -27,7 +32,11 @@ content_blocks:
         <li>同理心，能够理解用户的直接挫折感，理解他们的情绪</li>
       </ul>
       <div style="position:relative">
-        <img style="z-index: 1; pointer-events: none" src="/images/journey-map-3X.jpg" alt="Journey Map">
+        <picture>
+          <source type="image/avif" srcset="/images/journey-map-3x.avif">
+          <source type="image/webp" srcset="/images/journey-map-3x.webp">
+          <img loading="lazy" style="z-index: 1; pointer-events: none" src="/images/journey-map-3x.jpg" alt="Munire's Journey Map">
+        </picture>
         <a class="c-button c-button--primary" style=
         "
           z-index: 2;
@@ -35,7 +44,7 @@ content_blocks:
           top: 37%; right: 13%;
           width: 11%;
           height: 3%;
-        " href="/files/pm-wedding.pdf" >点击查看项目</a>
+        " target="_blank" rel="noopener noreferrer" href="/files/pm-wedding.pdf" >点击查看项目</a>
 
         <a class="c-button c-button--primary" style=
         "
@@ -83,7 +92,7 @@ content_blocks:
     show_testimonials: true
 
   - _bookshop_name: newsletter
-    newsletter_title: 作为刚入UX行不久的一员，我深知自己未来还有很大学习和提升空间. 如果你看到这里，那么留下一点职业建议或机会吧，或者就只是让我和你一起喝杯咖啡讲讲照片里的故事.
+    newsletter_title: 作为刚入UX行不久的一员，我深知未来自己还有很大的学习和提升空间. 如果你看到这里，那么留下一点职业建议或机会吧，或者就只是让我和你喝杯咖啡讲讲照片里的故事.
     newsletter_description: 期待和屏幕前的你交流!
     newsletter_link: mailto:munire0503@outlook.com
     newsletter_button: 发送邮件
