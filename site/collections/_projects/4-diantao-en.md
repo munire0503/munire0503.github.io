@@ -1,5 +1,5 @@
 ---
-date: 2022-05-03 05:21:00 +0800
+date: 2022-08-05 05:24:00 +0800
 title: DianTao Redesign
 subtitle: UX Design
 image: '/images/project-diantao-preview'
