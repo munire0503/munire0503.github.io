@@ -26,7 +26,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
   <!-- Ionicons -->
-  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://cdn.bootcdn.net/ajax/libs/ionicons/4.5.0/collection/components/icon/icon.min.css" rel="stylesheet"> -->
 
   <link rel="stylesheet" href="/assets/main.css">
 </head>
@@ -53,7 +54,7 @@
           <div class="main-nav__box">
 
             <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
+              <ion-icon name="close"></ion-icon>
             </div>
 
             <div class="nav__title">Menu</div>
@@ -75,7 +76,10 @@
               
                 
                 <li class="nav__item dropdown">
-                  <span class="nav__link dropdown-toggle"><a href="/about/">关于我 </a><i class="ion ion-ios-arrow-down arrow-down"></i></span>
+                  <span class="nav__link dropdown-toggle" style="display: flex">
+                    <a href="/about/">关于我 </a>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </span>
                   <div class="dropdown-menu">
                     
                       <a href="/about/#persona" class="nav__link">人物画像</a>
@@ -105,7 +109,11 @@
   <ul class="social__list list-reset">
     
     <li class="social__item">
-      <a class="social__link" href="mailto:munire0503@outlook.com" target="_blank" rel="noopener" aria-label="ion-md-mail icon"><i class="ion ion-md-mail"><span style="font-family:monospace"> 求职中</span></i></a>
+      <!-- <a class="social__link" href="mailto:munire0503@outlook.com" target="_blank" rel="noopener" aria-label="mail icon"><i class="ion mail"><span style="font-family:monospace"> 求职中</span></i></a> -->
+      <a style="display:flex; gap: 5px;" class="social__link" href="mailto:munire0503@outlook.com" target="_blank" rel="noopener" aria-label="mail icon">
+        <ion-icon name="mail"></ion-icon>
+        <span>  求职中</span>
+      </a>
     </li>
     
   </ul>
@@ -115,7 +123,8 @@
         </nav>
 
         <div class="nav-button">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+          <!-- <i class="nav__icon nav__icon-menu ion ion-md-menu"></i> -->
+          <ion-icon name="menu" class="nav__icon nav__icon-menu"></ion-icon>
         </div>
 
       </div>
@@ -152,7 +161,7 @@
               <!-- If needed, uncomment and add "cta_button: 联系我 cta_button_link: "xxx" to index.html page too -->
               <!-- <a href="" class="cta-button c-button c-button--primary c-button--small"></a> -->
               <a class="works-button c-button c-button--primary c-button--small" href="#projects">
-                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> 作品集
+                <span class="circle-bg"><ion-icon name="caret-down-outline"></ion-icon></span> 作品集
               </a>
             </div>
           </div>
@@ -187,76 +196,21 @@
           <div class="section__info">
             <div class="section__head">
               <h2 class="section__title">UI / UX</h2>
-              <a class="section__link" href="/projects">查看全部 <i class="ion ion-md-arrow-forward"></i></a>
+                <a style="display: flex; gap: 3px" class="section__link" href="/projects">查看全部 <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
+
             </div>
             <div class="section__description"></div>
           </div>
 
           
-          <div class="column" id="test" style="display: flex">
+          <div class="column" style="display: flex; flex-wrap: wrap;">
             
               
                 <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[0]) -->
           
 <article class="c-project-card col col-6 col-d-6 col-t-12">
   <div class="c-project-card__content">
-    <a href="/project/1-diantao-cn" class="c-project-card__image">
-      <!-- Use avif or webp format if supported by the browser -->
-      <picture>
-        <source type="image/avif" srcset="/images/project-diantao-preview.avif">
-        <source type="image/webp" srcset="/images/project-diantao-preview.webp">
-        <img loading="lazy" src="/images/project-diantao-preview.png" alt="点淘体验优化">
-      </picture>
-    </a>
-    <div class="c-project-card__info">
-      <div class="c-project-card__info-wrap">
-        <h3 class="c-project-card__title">点淘体验优化</h3>
-      </div>
-      <div class="c-project-card__info-wrap">
-        
-        <div class="c-project-card__subtitle">UX 设计</div>
-        
-      </div>
-    </div>
-  </div>
-</article>
-          <!--bookshop-live end-->
-              
-            
-              
-                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[1]) -->
-          
-<article class="c-project-card col col-6 col-d-6 col-t-12">
-  <div class="c-project-card__content">
-    <a href="/project/2-diantao-en" class="c-project-card__image">
-      <!-- Use avif or webp format if supported by the browser -->
-      <picture>
-        <source type="image/avif" srcset="/images/project-diantao-preview.avif">
-        <source type="image/webp" srcset="/images/project-diantao-preview.webp">
-        <img loading="lazy" src="/images/project-diantao-preview.png" alt="DianTao Redesign">
-      </picture>
-    </a>
-    <div class="c-project-card__info">
-      <div class="c-project-card__info-wrap">
-        <h3 class="c-project-card__title">DianTao Redesign</h3>
-      </div>
-      <div class="c-project-card__info-wrap">
-        
-        <div class="c-project-card__subtitle">UX Design</div>
-        
-      </div>
-    </div>
-  </div>
-</article>
-          <!--bookshop-live end-->
-              
-            
-              
-                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[2]) -->
-          
-<article class="c-project-card col col-6 col-d-6 col-t-12">
-  <div class="c-project-card__content">
-    <a href="/project/3-sanyang-cn" class="c-project-card__image">
+    <a href="/project/1-sanyang-cn" class="c-project-card__image">
       <!-- Use avif or webp format if supported by the browser -->
       <picture>
         <source type="image/avif" srcset="/images/project-sanyang-preview.avif">
@@ -280,11 +234,11 @@
               
             
               
-                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[3]) -->
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[1]) -->
           
 <article class="c-project-card col col-6 col-d-6 col-t-12">
   <div class="c-project-card__content">
-    <a href="/project/4-sanyang-en" class="c-project-card__image">
+    <a href="/project/2-sanyang-en" class="c-project-card__image">
       <!-- Use avif or webp format if supported by the browser -->
       <picture>
         <source type="image/avif" srcset="/images/project-sanyang-preview.avif">
@@ -299,6 +253,62 @@
       <div class="c-project-card__info-wrap">
         
         <div class="c-project-card__subtitle">UI/UX Design</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+          <!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[2]) -->
+          
+<article class="c-project-card col col-6 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/3-diantao-cn" class="c-project-card__image">
+      <!-- Use avif or webp format if supported by the browser -->
+      <picture>
+        <source type="image/avif" srcset="/images/project-diantao-preview.avif">
+        <source type="image/webp" srcset="/images/project-diantao-preview.webp">
+        <img loading="lazy" src="/images/project-diantao-preview.png" alt="点淘体验优化">
+      </picture>
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">点淘体验优化</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">UX 设计</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+          <!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[3]) -->
+          
+<article class="c-project-card col col-6 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/4-diantao-en" class="c-project-card__image">
+      <!-- Use avif or webp format if supported by the browser -->
+      <picture>
+        <source type="image/avif" srcset="/images/project-diantao-preview.avif">
+        <source type="image/webp" srcset="/images/project-diantao-preview.webp">
+        <img loading="lazy" src="/images/project-diantao-preview.png" alt="DianTao Redesign">
+      </picture>
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">DianTao Redesign</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">UX Design</div>
         
       </div>
     </div>
@@ -483,7 +493,7 @@
 
           <!--bookshop-live end-->
 
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+    <div class="top" title="Top"><ion-icon name="chevron-up-outline" size="large"></ion-icon></div>
 
     <!-- begin footer -->
 <footer class="footer">
@@ -556,7 +566,9 @@
     <script src="/js/common.js"></script>
 
     <!-- Lazy loading ionicons. -->
-    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons.js"></script> -->
+    <script type="module" src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons/ionicons.js"></script>
 </body>
-<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </html>
