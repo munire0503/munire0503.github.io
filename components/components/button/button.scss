@@ -65,19 +65,19 @@
   }
 
   &--large {
-    padding: 24px 44px;
+    padding: 20px 40px;
     font-size: 18px;
   }
 
   @media (max-width: $desktop) {
-    font-size: 10px
+    font-size: 12px
   }
 
   @media (max-width: $tablet) {
-    font-size: 7px
+    font-size: 11px
   }
 
   @media (max-width: $mobile) {
-    font-size: 5px
+    font-size: 10px
   }
 }
