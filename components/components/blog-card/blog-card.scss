@@ -58,6 +58,8 @@
 
   &__tags-box {
     display: flex;
+    // Keep tag text on one line
+    min-width: 310px;
   }
 
   &__tag {

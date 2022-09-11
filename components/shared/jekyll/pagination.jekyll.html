@@ -3,8 +3,8 @@
   <div class="container">
     <div class="pagination__inner">
 
-      <div class="pagination__list">
-        {% capture prev_text %}<i class="ion ion-ios-arrow-back"></i> Prev{% endcapture %}
+      <div class="pagination__list" style="display: flex;">
+        {% capture prev_text %}<ion-icon name="chevron-back-outline"></ion-icon> <span style="font-size: 18px;"> Prev</span>{% endcapture %}
         <a data-pagebreak-control="prev" href="." class="pagination__prev">{{prev_text}}</a>
         <span data-pagebreak-control="!prev" class="pagination__prev disabled">{{prev_text}}</span>
 
@@ -13,7 +13,7 @@
           of <span data-pagebreak-label="total">1</span>
         </div>
 
-        {% capture next_text %}Next <i class="ion ion-ios-arrow-forward"></i>{% endcapture %}
+        {% capture next_text %}<span style="font-size: 18px;">Next </span> <ion-icon name="chevron-forward-outline"></ion-icon>{% endcapture %}
         <a data-pagebreak-control="next" href="." class="pagination__next">{{next_text}}</a>
         <span data-pagebreak-control="!next" class="pagination__next disabled">{{next_text}}</span>
       </div>

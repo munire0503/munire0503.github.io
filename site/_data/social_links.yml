@@ -5,4 +5,4 @@
 # - {icon: "ion-ios-<icon>", link: "..."}
 # Other icons can be found at https://ionicons.com/v4/
 social:
-- {icon: "ion-md-mail", link: "mailto:munire0503@outlook.com"}
+- {icon: "mail", link: "mailto:munire0503@outlook.com"}

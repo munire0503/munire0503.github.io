@@ -19,7 +19,7 @@
     -->
     {% bookshop_include page content_blocks=page.content_blocks page_theme=page.page_theme %}
 
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+    <div class="top" title="Top"><ion-icon name="chevron-up-outline" size="large"></ion-icon></div>
 
     {% include footer.html %}
 
@@ -32,7 +32,9 @@
     <script src="/js/common.js"></script>
 
     <!-- Lazy loading ionicons. -->
-    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons.js"></script> -->
+    <script type="module" src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons/ionicons.js"></script>
 </body>
-<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </html>
