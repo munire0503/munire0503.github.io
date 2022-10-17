@@ -1,6 +1,6 @@
 ---
 date: 2022-08-05 05:24:00 +0800
-title: DianTao Redesign
+title: DianTao Optimization
 subtitle: UX Design
 image: '/images/project-diantao-preview'
 ---
