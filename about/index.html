@@ -26,7 +26,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
   <!-- Ionicons -->
-  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://cdn.bootcdn.net/ajax/libs/ionicons/4.5.0/collection/components/icon/icon.min.css" rel="stylesheet"> -->
 
   <link rel="stylesheet" href="/assets/main.css">
 </head>
@@ -53,7 +54,7 @@
           <div class="main-nav__box">
 
             <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
+              <ion-icon name="close"></ion-icon>
             </div>
 
             <div class="nav__title">Menu</div>
@@ -75,7 +76,10 @@
               
                 
                 <li class="nav__item dropdown">
-                  <span class="nav__link dropdown-toggle"><a href="/about/">关于我 </a><i class="ion ion-ios-arrow-down arrow-down"></i></span>
+                  <span class="nav__link dropdown-toggle" style="display: flex">
+                    <a href="/about/">关于我 </a>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </span>
                   <div class="dropdown-menu">
                     
                       <a href="/about/#persona" class="nav__link">人物画像</a>
@@ -105,7 +109,11 @@
   <ul class="social__list list-reset">
     
     <li class="social__item">
-      <a class="social__link" href="mailto:munire0503@outlook.com" target="_blank" rel="noopener" aria-label="ion-md-mail icon"><i class="ion ion-md-mail"><span style="font-family:monospace"> 求职中</span></i></a>
+      <!-- <a class="social__link" href="mailto:munire0503@outlook.com" target="_blank" rel="noopener" aria-label="mail icon"><i class="ion mail"><span style="font-family:monospace"> 求职中</span></i></a> -->
+      <a style="display:flex; gap: 5px;" class="social__link" href="mailto:munire0503@outlook.com" target="_blank" rel="noopener" aria-label="mail icon">
+        <ion-icon name="mail"></ion-icon>
+        <span>  求职中</span>
+      </a>
     </li>
     
   </ul>
@@ -115,7 +123,8 @@
         </nav>
 
         <div class="nav-button">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+          <!-- <i class="nav__icon nav__icon-menu ion ion-md-menu"></i> -->
+          <ion-icon name="menu" class="nav__icon nav__icon-menu"></ion-icon>
         </div>
 
       </div>
@@ -147,20 +156,20 @@
     <!--bookshop-live name(content/content.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
           <div class="container">
   <div class="page animate">
-    <h3 id="persona" style="font-family: 'Courier New', Courier, monospace; text-align: center; padding-top: 5%">Hi! 我是穆妮热 可以叫我 Mia ^_^ </h3> <p style="text-align: center;">让我用UX方式和你讲述我的故事吧</p>
+    <h3 id="persona" style="font-family: 'Courier New', Courier, monospace; text-align: center; padding-top: 5%">Hi! 我是穆妮热 可以叫我 Mia ^_^ </h3> <p style="text-align: center;">让我用UX方式和你讲述我的故事吧...</p>
 <!-- 人物画像 --> <h1 style="padding-top: 2%; padding-bottom: 3%;"><a href="#persona">人物画像</a></h1> <p style="text-align: center;"></p> <picture>
-  <source type="image/avif" srcset="/images/persona-2x.avif">
-  <source type="image/webp" srcset="/images/persona-2x.webp">
-  <img loading="lazy" style="padding-left:5%; padding-right: 5%;" src="/images/persona-2x.png" alt="Munire's Persona">
+  <source type="image/avif" srcset="/images/persona.avif">
+  <source type="image/webp" srcset="/images/persona.webp">
+  <img loading="lazy" style="padding-left:5%; padding-right: 5%;" src="/images/persona.png" alt="Munire's Persona">
 </picture> <blockquote style="text-align: center;">
   <p>A "can do" attitude is where my journey starts.</p>
 </blockquote>
 <!-- 旅程图 --> <h1 id="journey-map" style="padding-top: 10%;"><a href="#journey-map">旅程图</a></h1>
 <div style="position:relative;">
   <picture>
-    <source type="image/avif" srcset="/images/journey-map-2x.avif">
-    <source type="image/webp" srcset="/images/journey-map-2x.webp">
-    <img loading="lazy" style="z-index: 1; pointer-events: none;" src="/images/journey-map-2x.jpg" alt="Munire's Journey Map">
+    <source type="image/avif" srcset="/images/journey-map.avif">
+    <source type="image/webp" srcset="/images/journey-map.webp">
+    <img loading="lazy" style="z-index: 1; pointer-events: none;" src="/images/journey-map.jpg" alt="Munire's Journey Map">
   </picture>
   <a class="c-button c-button--primary" style=
   "
@@ -178,7 +187,7 @@
     top: 60%; right: 75%;
     width: 15%;
     height: 5%;
-  " href="/project/1-diantao-cn" >点击查看项目</a>
+  " href="/project/3-diantao-cn" >点击查看项目</a>
 
   <a class="c-button c-button--primary" style=
   " z-index: 2;
@@ -186,12 +195,13 @@
     top: 80%; right: 13%;
     width: 15%;
     height: 5%;
-  " href="/project/3-sanyang-cn" >点击查看项目</a>
+  " href="/project/1-sanyang-cn" >点击查看项目</a>
 </div>
 <p style="text-align: center; padding-top: 5%;">
-  专业项目管理培训让我锻炼了计划、分析、执行和控制能力.<br>
+  专业的交互设计培训为我储备了设计方法论.<br>
+  项目管理学习让我锻炼了计划、分析、执行和控制能力.<br>
   市场管理经验让我充分意识到一个好的设计不光要解决问题，还要创造价值.<br>
-  我的服务业从业背景能为我的团队带来:
+  我的旅游业从业背景能为我的团队带来:
 </p>
 <ul style="text-align: center; list-style: none;">
   <li>以用户为中心的设计思维</li>
@@ -215,7 +225,7 @@
     我只有两只迷你口红，花了三年用完，终于可以尝试新的色号<br>
     比如<br>
     我的衣柜一半都是拥有五年或以上历史的衣服<br>
-    <br>                                                                          
+    <br>
     我也极其喜欢收集故事<br>
     比如<br>
     我会收藏长辈年轻时的首饰<br>
@@ -704,10 +714,10 @@
         <div style="margin-left:auto; margin-right:auto; width:fit-content;">
           <ul class="controls list-reset" id="customize-controls" aria-label="Slider Navigation" tabindex="0">
             <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-              <i class="ion ion-ios-arrow-back"></i>
+              <ion-icon name="chevron-back-outline"></ion-icon>
             </li>
             <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
-              <i class="ion ion-ios-arrow-forward"></i>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
             </li>
           </ul>
         </div>
@@ -762,7 +772,7 @@
 
           <!--bookshop-live end-->
 
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+    <div class="top" title="Top"><ion-icon name="chevron-up-outline" size="large"></ion-icon></div>
 
     <!-- begin footer -->
 <footer class="footer">
@@ -835,7 +845,9 @@
     <script src="/js/common.js"></script>
 
     <!-- Lazy loading ionicons. -->
-    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script> -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons.js"></script> -->
+    <script type="module" src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://cdn.bootcdn.net/ajax/libs/ionicons/6.0.3/ionicons/ionicons.js"></script>
 </body>
-<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </html>
