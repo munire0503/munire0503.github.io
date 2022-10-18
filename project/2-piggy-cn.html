@@ -15,20 +15,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="小猪民宿再设计 – Munire">
   <meta name="twitter:description" content="
-
-
-
-
 ">
   <meta name="twitter:image:src" content="http://localhost:4000/images/project-piggy-preview">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:title" content="小猪民宿再设计 – Munire">
   <meta property="og:description" content="
-
-
-
-
 ">
   <meta property="og:image" content="http://localhost:4000/images/project-piggy-preview">
 
@@ -158,15 +150,22 @@
           <!--bookshop-live end-->
 
   <div class="page animate">
-    <style>
-.non_pointer {
-    pointer-events: none
-}
-</style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const a = document.getElementById("project-piggy-cn-a");
+        a.src="/images/project-piggy-cn-a.webp";
 
-<p><img src="/images/project-piggy-cn-a.webp" alt="小猪民宿再设计-a" id="identifier" class="non_pointer" />
-<img src="/images/project-piggy-cn-b.webp" alt="小猪民宿再设计-b" id="identifier" class="non_pointer" />
-<img src="/images/project-piggy-cn-c.webp" alt="小猪民宿再设计-c" id="identifier" class="non_pointer" /></p>
+        const b = document.getElementById("project-piggy-cn-b");
+        b.src="/images/project-piggy-cn-b.webp";
+
+        const c = document.getElementById("project-piggy-cn-c");
+        c.src="/images/project-piggy-cn-c.webp";
+    });
+</script>
+
+<p><img id="project-piggy-cn-a" loading="lazy" style="pointer-events:none" src="/images/loading.gif" alt="Loading..." />
+<img id="project-piggy-cn-b" loading="lazy" style="pointer-events:none" src="/images/loading.gif" alt="Loading..." />
+<img id="project-piggy-cn-c" loading="lazy" style="pointer-events:none" src="/images/loading.gif" alt="Loading..." /></p>
 
   </div>
 
