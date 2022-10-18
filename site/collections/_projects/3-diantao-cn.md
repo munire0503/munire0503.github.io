@@ -4,11 +4,20 @@ title: 点淘体验优化
 subtitle: UX 设计
 image: '/images/project-diantao-preview'
 ---
-<style>
-.non_pointer {
-    pointer-events: none
-}
-</style>
-![点淘体验优化-a](/images/project-diantao-cn-a.webp){: #identifier .non_pointer}
-![点淘体验优化-b](/images/project-diantao-cn-b.webp){: #identifier .non_pointer}
-![点淘体验优化-c](/images/project-diantao-cn-c.webp){: #identifier .non_pointer}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const a = document.getElementById("project-diantao-cn-a");
+        a.src="/images/project-diantao-cn-a.webp";
+
+        const b = document.getElementById("project-diantao-cn-b");
+        b.src="/images/project-diantao-cn-b.webp";
+
+        const c = document.getElementById("project-diantao-cn-c");
+        c.src="/images/project-diantao-cn-c.webp";
+    });
+</script>
+
+<img id="project-diantao-cn-a" loading="lazy" style="pointer-events:none" src="/images/loading.gif" alt="Loading...">
+<img id="project-diantao-cn-b" loading="lazy" style="pointer-events:none" src="/images/loading.gif" alt="Loading...">
+<img id="project-diantao-cn-c" loading="lazy" style="pointer-events:none" src="/images/loading.gif" alt="Loading...">
