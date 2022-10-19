@@ -191,7 +191,8 @@
 	}
 
 	img, .js-reframe {
-		border-radius: 8px;
+		// Comment the following out to remove empty space in project's images.
+		// border-radius: 8px;
 		overflow: hidden;
 
 		&.lightense-open {
