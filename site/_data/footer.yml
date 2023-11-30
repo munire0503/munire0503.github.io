@@ -6,8 +6,8 @@ footer_menu__settings:
       url: '/projects'
     - title: '关于我'
       url: '/about'
-    - title: '简历'
-      url: '/files/munire-resume.pdf'
+    # - title: '简历'
+    #   url: '/files/munire-resume.pdf'
 
 copyright_text_html: >-
   <p> 2022 &copy; <a href="/">Munira</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a> Made with ❤️ by <a href="https://www.linkedin.com/in/sai-diliyaer">Dilyar</a>.</p>

@@ -15,5 +15,5 @@ menu__settings:
         title: '旅程图'
       - url: '/about/#story-telling'
         title: '故事版'
-    - title: '简历'
-      url: '/files/munire-resume.pdf'
+    # - title: '简历'
+    #   url: '/files/munire-resume.pdf'
